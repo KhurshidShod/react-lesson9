@@ -10,7 +10,7 @@ const ProductCard = ({ name, desc, image, price }) => {
       </div>
       <span> {name}</span>
       <p className={styles["job"]}> {desc}</p>
-      <button>{price}</button>
+      <button>${price}</button>
     </div>
   );
 };
