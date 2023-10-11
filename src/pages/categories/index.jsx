@@ -4,6 +4,7 @@ import styles from "./Categories.module.css";
 import CategoryCard from "../../components/categoryCard";
 import { HiLogout } from 'react-icons/hi'
 import { useNavigate } from "react-router-dom";
+import PropTypes from 'prop-types'
 
 const Categories = ({ setIsAuth }) => {
   const [categories, setCategories] = useState();
@@ -35,5 +36,9 @@ const Categories = ({ setIsAuth }) => {
     </section>
   );
 };
+
+Categories.propTypes = {
+  setIsAuth: PropTypes.func
+}
 
 export default Categories;
