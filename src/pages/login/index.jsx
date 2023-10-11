@@ -73,10 +73,10 @@ const Login = ({ setIsAuth }) => {
               </span>
             </div>
             <div className={styles["form-group"]}>
-              <label htmlFor="email">Password</label>
+              <label htmlFor="password">Password</label>
               <input
                 type="password"
-                id={styles["email"]}
+                id={styles["password"]}
                 name="password"
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
