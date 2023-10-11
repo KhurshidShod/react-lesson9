@@ -6,7 +6,7 @@ import { HiLogout } from 'react-icons/hi'
 import { useNavigate } from "react-router-dom";
 
 const Categories = ({ setIsAuth }) => {
-  const [categories, setCategories] = useState(null);
+  const [categories, setCategories] = useState();
   const navigate = useNavigate()
   useEffect(() => {
     return () =>
@@ -23,7 +23,7 @@ const Categories = ({ setIsAuth }) => {
         navigate('/')
       }}>Log out <HiLogout /></button>
       <div className={styles["categories-wrapper"]}>
-        {categories?.map((cat) => (
+        {categories && categories.map((cat) => (
           <CategoryCard
             key={cat.id}
             title={cat.category}
