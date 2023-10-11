@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .categories-wrapper {
@@ -30,6 +31,24 @@
     background-color: #121212;
     position: absolute;
     left: 2rem;
+    top: 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.25rem;
+}
+.add{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #121212;
+    position: absolute;
+    right: 2rem;
     top: 2rem;
     cursor: pointer;
     display: flex;
